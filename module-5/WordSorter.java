@@ -26,15 +26,9 @@ public class WordSorter {
         for (String word : descendingSet) {
             System.out.println(word);
         }
-
-        // Simple test to check word presence
-        if (ascendingSet.contains("apple")) {
-            System.out.println("\nTest Passed: 'apple' found in set.");
-        } else {
-            System.out.println("\nTest Failed: 'apple' not found.");
-        }
     }
-    // Reads words from the given file and returns a list of a cleaned and lowercase words
+
+    // Reads words from the given file and returns a list of cleaned and lowercase words
     private static List<String> readWordsFromFile(String filename) {
         List<String> words = new ArrayList<>();
         try (Scanner scanner = new Scanner(new File(filename))) {
